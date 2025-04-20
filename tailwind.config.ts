@@ -11,9 +11,10 @@ const config: Config = {
     extend: {
       colors: {
         background: 'var(--background)',
-        base: '#005CFF',
+        'base-blue': '#005CFF',
         grey: {
-          medium: '#DDDDDD'
+          medium: '#DDDDDD',
+          'card-user': '#D9D9D9'
         }
       },
     },
