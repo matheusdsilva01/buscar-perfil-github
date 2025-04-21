@@ -1,6 +1,8 @@
-import type { Metadata } from 'next';
-import { Nunito_Sans } from 'next/font/google';
+import { QueryContext } from '@/context';
 import './globals.css';
+
+import { Nunito_Sans } from 'next/font/google';
+import type { Metadata } from 'next';
 
 const fontNunitoSans = Nunito_Sans({
   variable: '--font-nunito-sans',
@@ -25,7 +27,9 @@ export default function RootLayout({
       <body
         className={`${fontNunitoSans.variable} antialiased`}
       >
-        {children}
+        <QueryContext>
+          {children}
+        </QueryContext>
       </body>
     </html>
   );

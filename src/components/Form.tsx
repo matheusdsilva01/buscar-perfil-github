@@ -1,12 +1,15 @@
 'use client'
+import { SearchContext } from '@/context/SearchContext';
 import Image from 'next/image';
-import { FormEvent } from 'react';
+import { FormEvent, useContext } from 'react';
 
 export const Form = () => {
+  const { setSearch } = useContext(SearchContext)
+
   const onSubmit = (event: FormEvent) => {
     event.preventDefault();
     const value = (event.target as HTMLFormElement).search.value
-    console.log(value)
+    setSearch(value);
   };
 
   return (
