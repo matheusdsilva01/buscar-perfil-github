@@ -1,36 +1,89 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+#  Buscar Perfil Github
+##### Este é um projeto desenvolvido para o desafio técnico Frontend, trata-se de um buscador de perfil usando a API do Github.
 
-## Getting Started
+## Projeto desenvolvido utilizando as seguintes tecnologias
+  - `React`
+  - `Typescript`
+  - `Next`
+  - `Tailwind CSS`
+  - `TanStack React Query`
 
-First, run the development server:
+*Este projeto foi inicializado com [Next](https://nextjs.org/docs/14/) na versão 14 utilizando o diretório app.*
+
+## Estrutura do Projeto
+#### A estrutura do projeto é organizada da seguinte forma, utilizando o padrão de pastas do Next.js(App):
+
+```
+GitHub-Profile
+├── public
+│   ├── assets
+│   │   ├── Imagens e ícones
+├── src
+│   ├── app
+│   │   ├── Rotas, páginas e utilitários do Next
+│   ├── components
+│   │   ├── Componentes reutilizáveis
+│   ├── contexts
+│   │   ├── Contextos para gerenciamento de estado
+│   ├── layouts
+│   │   ├── Layouts da aplicação
+│   ├── requests
+│   │   ├── Requisições para a API
+```
+
+## Funcionalidades
+
+A aplicação faz a busca de um perfil no Github através do nome de usuário informado pelo usuário.
+
+Primeiro ela armazena o nome do usuário, que o usuário informou, em um contexto para que demais componentes possam acessa-ló, com esse valor no componente [CardUser](https://github.com/matheusdsilva01/buscar-perfil-github/blob/main/src/components/CardUser.tsx) é feito uma requisição para a API do Github usando o Tanstack React Query para gerenciamento do HTTP state, com os dados retornados da requisição, o componente exibe a foto e bio do perfil buscado.
+
+- **Busca de perfil**: O usuário pode buscar perfis do Github através do seu nome de usuário.
+- **Exibição de informações**: A aplicação exibe a imagem e bio do perfil buscado.
+- **Tratamento de erros**: A aplicação lida com erros na busca.
+
+A aplicação é responsiva e se adapta a diferentes tamanhos de tela.
+
+## Visualização do Projeto
+Para visualizar o projeto localmente, siga as instruções abaixo.
+
+1. Clone o repositório:
+
+```bash
+git clone https://github.com/matheusdsilva01/buscar-perfil-github
+```
+
+2. Instale as dependências: 
+
+```bash
+npm install
+```
+
+3. Após a instalação das dependências, execute o comando abaixo para iniciar o projeto localmente na porta [3000](http://localhost:3000):
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Scripts Disponíveis
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+No diretório do projeto, você pode executar:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### `npm install`
 
-## Learn More
+Para instalação de todas as dependências necessárias para funcionamento do projeto.
 
-To learn more about Next.js, take a look at the following resources:
+### `npm run dev`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Executa o aplicativo:\
+Abra [http://localhost:3000](http://localhost:3000) para visualizá-lo no navegador.\
+A página será recarregada se você fizer edições no código.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### `npm run build`
 
-## Deploy on Vercel
+Constrói o aplicativo para produção na pasta `.next`.\
+Ele agrupa corretamente o React no modo de produção e otimiza o build para obter o melhor desempenho.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### `npm start`
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Inicia o aplicativo em produção.\
+O aplicativo será servido em [http://localhost:3000](http://localhost:3000).
