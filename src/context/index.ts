@@ -1,2 +1,2 @@
-export * from './QueryContext'
+export * from './QueryClientContext'
 export * from './SearchContext'
