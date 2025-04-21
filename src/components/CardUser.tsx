@@ -20,16 +20,16 @@ export const CardUser = () => {
   }
 
   return (
-    <div className="bg-grey-card-user rounded-3xl py-5 px-8 mt-8 mx-auto w-full max-w-[804px]">
+    <div className="bg-grey-card-user rounded-lg md:rounded-3xl py-3 px-1 md:py-5 md:px-8 mt-8 mx-auto w-full max-w-[804px]">
       {isLoading && (
         <div className="flex items-center justify-center">
           <Image className='animate-spin' src={'/loader.svg'} width={24} height={24} alt="Loader icon" />
         </div>
       )}
       {isSuccess && (
-        <div className="flex items-center gap-8">
+        <div className="flex items-center gap-3 md:gap-8">
           <Image
-            className="rounded-full border-2 border-base-blue"
+            className="rounded-full border-2 border-base-blue size-16 md:size-[220px]"
             src={data.avatar_url}
             width={220}
             height={220}
@@ -37,7 +37,7 @@ export const CardUser = () => {
           />
           <div>
             <h3 className="text-base-blue text-xl font-bold">{data.name || 'Nome não disponível'}</h3>
-            <p className="mt-4 font-light">
+            <p className="mt-1 md:mt-4 text-sm md:text-base font-light">
               {data.bio ?? 'Esse usuário não possui uma bio cadastrada.'}
             </p>
           </div>

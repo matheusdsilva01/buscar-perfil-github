@@ -21,14 +21,14 @@ export const Form = () => {
         type="text"
         name="search"
         placeholder="Digite um usuário do Github"
-        className="rounded-xl w-full text-xl font-semibold py-[17px] pl-4 pr-16 bg-grey-medium"
+        className="rounded-xl w-full md:text-xl font-semibold py-3 md:py-[17px] pl-4 pr-16 bg-grey-medium"
       />
       <button
         type="submit"
-        className="absolute right-0 bg-base-blue top-0 h-full w-[62px] rounded-xl border-grey-medium border"
+        className="absolute right-0 bg-base-blue top-0 h-full aspect-square rounded-xl border-grey-medium border"
       >
         <Image
-          className="m-auto"
+          className="m-auto size-5 md:size-auto"
           src="/search.svg"
           width={25}
           height={25}

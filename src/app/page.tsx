@@ -9,9 +9,9 @@ export default async function Home() {
   return (
     <MainLayout>
       <SearchContextProvider>
-        <section className='bg-black max-w-6xl w-full py-10 px-6 m-auto min-h-[537px]'>
+        <section className='bg-black rounded md:rounded-none max-w-6xl w-full py-10 px-6 m-auto min-h-[537px]'>
           <div>
-            <Image className='mx-auto' src="/logotype.svg" width={384} height={82} alt="Logotype application" />
+            <Image className='mx-auto w-48 md:w-96 md:h-[82px]' src="/logotype.svg" width={384} height={82} alt="Logotype application" />
             <Form />
           </div>
           <CardUser />
