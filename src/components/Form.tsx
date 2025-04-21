@@ -29,7 +29,7 @@ export const Form = () => {
       >
         <Image
           className="m-auto size-5 md:size-auto"
-          src="/search.svg"
+          src="/assets/search.svg"
           width={25}
           height={25}
           alt="Search icon"

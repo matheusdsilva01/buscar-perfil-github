@@ -23,7 +23,7 @@ export const CardUser = () => {
     <div className="bg-grey-card-user rounded-lg md:rounded-3xl py-3 px-1 md:py-5 md:px-8 mt-8 mx-auto w-full max-w-[804px]">
       {isLoading && (
         <div className="flex items-center justify-center">
-          <Image className='animate-spin' src={'/loader.svg'} width={24} height={24} alt="Loader icon" />
+          <Image className='animate-spin' src={'/assets/loader.svg'} width={24} height={24} alt="Loader icon" />
         </div>
       )}
       {isSuccess && (
