@@ -48,6 +48,11 @@ A aplicação é responsiva e se adapta a diferentes tamanhos de tela.
 ## Visualização do Projeto
 Para visualizar o projeto localmente, siga as instruções abaixo.
 
+### Pré-requisitos
+- [Node.js](https://nodejs.org/pt) (versão 18 ou superior)
+- [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) (geralmente já vem instalado com o Node.js)
+- [Git](https://git-scm.com/downloads) (opcional, para clonar o repositório)
+
 1. Clone o repositório:
 
 ```bash
@@ -89,3 +94,7 @@ Ele agrupa corretamente o React no modo de produção e otimiza o build para obt
 
 Inicia o aplicativo em produção.\
 O aplicativo será servido em [http://localhost:3000](http://localhost:3000).
+
+### `npm run lint`
+
+Executa o ESLint para verificar problemas de linting no código.\
