@@ -1,6 +1,8 @@
 #  Buscar Perfil Github
 ##### Este é um projeto desenvolvido para o desafio técnico Frontend, trata-se de um buscador de perfil usando a API do Github.
 
+Você pode visualizar o projeto [aqui](https://buscar-perfil-github-zeta.vercel.app) ou visitando o link: https://buscar-perfil-github-zeta.vercel.app.
+
 ## Projeto desenvolvido utilizando as seguintes tecnologias
   - `React`
   - `Typescript`
